@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class FourTwentythree{
+
+public static void main(String[] args) {
+
+	Scanner input = new Scanner(System.in);
+
+			//Andrew Erickson 9-24-18
+
+        System.out.println("Enter name of employee's name:")
+        String name = input.next();
+        
+        System.out.println("Enter the number of hours worked in one week:");
+        double hours = input.nextDouble();
+        
+        System.out.println("Enter hourly pay amount");
+        double pay = input.nextDouble();
+    
+        System.out.println("Enter federal tax withholding rate: ");
+        double fedtaxr = input.nextDouble();
+        
+        System.out.println("Enter state tax witholding rate: ");
+        double statetaxr = input.nextDouble();
+        
+        double gross = hours * pay;
+        double fedtax = gross * fedtaxr;
+        double statetax = gross * statetaxr;
+        double totaltax = fedtax + statetax;
+        double net = gross - totaltax
+        
+        
+        String out = "Employee name is" + name;
+        String.out.println ("Hours worked" + hours);
+        String.out.println ("Pay rate is $" + pay);
+        System.out.println (gross "is the gross pay.");
+        System.out.println (totaltax "is the total state witholding.");
+        System.out.println (totaltax "is the total federal witholding.");
+        System.out.println (totaltax "is the total witholding.");
+
+        
+        
+    }
+}
