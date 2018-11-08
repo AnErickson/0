@@ -39,10 +39,10 @@ public class SevenTwentyThree {
 	public static void print(String[] lockers) {
 		for (int i = 0; i < lockers.length; i++) {
 			if (isOpen(lockers[i])) {
-				System.out.print("Locker " + (i + 1) + ", ");
+				System.out.print("Locker " + (i) + ", ");
 			}
 		}
-		System.out.print("are open. ");
+		System.out.print("Locker 100, are open. ");
 		System.out.println("All else are closed :3.");
 	}
 }
